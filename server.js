@@ -92,14 +92,69 @@ function getCode(pname){
 "19"                  : "guest477 / kxUdvsKp",
 "EOL" : "EOL"
 }
+
+var a = "";
+
+a=a+'<p></p><p></p>';
+a=a+'<pre>';
+a=a+'';
+a=a+'##[git]#########################################';
+a=a+'(local)';
+a=a+' git';
+a=a+' ssh-keygen -t rsa -C "your_address@example.com"';
+a=a+'';
+a=a+'(NodeNinja)';
+a=a+' Add SSH Key';
+a=a+' Order Machine';
+a=a+'';
+a=a+'(local)';
+a=a+' git init';
+a=a+' git add .';
+a=a+' git commit -am 'hoge'';
+a=a+' git remote add ninja node@[IP]:repo';
+a=a+' git push ninja master';
+a=a+'';
+a=a+'';
+a=a+'##[github]#########################################';
+a=a+'(local)';
+a=a+' git';
+a=a+' ssh-keygen -t rsa -C "your_address@example.com"';
+a=a+'';
+a=a+'(Github)';
+a=a+' Create Account';
+a=a+' Add SSH Key';
+a=a+' Create Repo';
+a=a+'';
+a=a+'(NodeNinja)';
+a=a+' Add SSH Key';
+a=a+' Order Machine';
+a=a+'';
+a=a+'';
+a=a+'##[ssh]#########################################';
+a=a+'(local)';
+a=a+' ssh-keygen -t rsa -C "your_address@example.com"';
+a=a+'';
+a=a+'(NodeNinja)';
+a=a+' Add SSH Key';
+a=a+' Order Machine';
+a=a+'';
+a=a+'(local)';
+a=a+' ssh node@[IP]';
+a=a+' svcadm restart node';
+a=a+' ';
+a=a+'';
+a=a+'</pre>';
+a=a+'';
+
   var b = "<body><html>";
   if (pname == "") {
-    b = b + '<input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get />';
+    b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get />';
   } else if ( nlist[pname] != null ) {
-    b = b + nlist[pname] + "<p><a href=https://node-ninja.com>https://node-ninja.com</a></p>";
+    b = b + nlist[pname] + "<p><a href=https://node-ninja.com>https://node-ninja.com</a></p>" + a;
   } else {
     b = b + "Hi " + pname + ". Please send a request message. <a href=https://twitter.com/#!/node_ninja>https://twitter.com/#!/node_ninja</a></p>";
   }
   b = b + "</html></body>"
   return b;
 }
+
