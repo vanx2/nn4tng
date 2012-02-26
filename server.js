@@ -159,11 +159,11 @@ a=a+'';
 
   var b = "<body><html>";
   if (pname == "") {
-    b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get />';
+    b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get /> + a';
   } else if ( nlist[pname] != null ) {
     b = b + nlist[pname] + a;
   } else {
-    b = b + "Hi " + pname + ". Please send a request message. <a href=https://twitter.com/#!/node_ninja>https://twitter.com/#!/node_ninja</a></p>";
+    b = b + "Not exist. Please send a request message. <a href=https://twitter.com/#!/node_ninja>https://twitter.com/#!/node_ninja</a></p>";
   }
   b = b + "</html></body>"
   return b;
