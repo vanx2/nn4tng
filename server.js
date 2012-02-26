@@ -95,6 +95,10 @@ function getCode(pname){
 
 var a = "";
 
+a=a+'<p><a href="https://node-ninja.com" target="_blank">https://node-ninja.com</a></p>';
+a=a+'<p><a href="https://github.com/" target="_blank">https://github.com/</a></p>';
+
+
 a=a+'<p></p><p></p>';
 a=a+'<pre>\n';
 a=a+'\n';
@@ -150,7 +154,7 @@ a=a+'';
   if (pname == "") {
     b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get />';
   } else if ( nlist[pname] != null ) {
-    b = b + nlist[pname] + "<p><a href=https://node-ninja.com>https://node-ninja.com</a></p>" + a;
+    b = b + nlist[pname] + a;
   } else {
     b = b + "Hi " + pname + ". Please send a request message. <a href=https://twitter.com/#!/node_ninja>https://twitter.com/#!/node_ninja</a></p>";
   }
