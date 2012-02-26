@@ -159,7 +159,7 @@ a=a+'';
 
   var b = "<body><html>";
   if (pname == "") {
-    b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get /> + a';
+    b = b + 'Name(connpass) : <input id=n /><input type=button onClick="location.href=document.getElementById(' + "'n'" + ').value" value=get />' + a;
   } else if ( nlist[pname] != null ) {
     b = b + nlist[pname] + a;
   } else {
