@@ -101,6 +101,8 @@ a=a+'<p><a href="https://github.com/" target="_blank">https://github.com/</a></p
 
 a=a+'<p></p><p></p>';
 a=a+'<pre>\n';
+a=a+'Usage\n';
+a=a+'\n';
 a=a+'\n';
 a=a+'##[git]#########################################\n';
 a=a+'(local)\n';
