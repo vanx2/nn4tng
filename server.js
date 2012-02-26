@@ -103,6 +103,7 @@ a=a+'<p></p><p></p>';
 a=a+'<pre>\n';
 a=a+'Usage\n';
 a=a+'\n';
+a=a+'Node Ninja StartUp manual http://z-cloud.jp/pdf/manual/startup_ninja_B.pdf\n';
 a=a+'\n';
 a=a+'##[git]#########################################\n';
 a=a+'(local)\n';
