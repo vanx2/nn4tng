@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
     'Content-Length': body.length
   });
   res.end(body);
-}).listen(8080,"127.0.0.1");
+}).listen(80);
 
 function getCode(pname){
   var nlist = {
