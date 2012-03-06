@@ -1,3 +1,7 @@
 
-{ "version": "v0.4.12" }
+{ 
+    "version": "v0.4.12"
+  , "npm": true
+  , "main": "server.js"
+}
 
